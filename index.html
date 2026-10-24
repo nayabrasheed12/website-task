@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Neki connects people who need help with people who want to make a difference.">
+  <title>Neki | One Click Can Change a Life</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <div class="topbar">
+    Small acts of kindness create a big impact.
+    <a href="#donate">Be part of the change →</a>
+  </div>
+
+  <header class="header">
+    <div class="container nav-container">
+      <a class="logo" href="#home">Neki.com<span>.</span></a>
+
+      <button class="menu-toggle" id="menuToggle"
+        aria-label="Open navigation" aria-expanded="false">☰</button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#help">Find Help</a>
+        <a href="#request-help">Request Help</a>
+        <a href="#donate">Donate</a>
+        <a href="#stories">Our Stories</a>
+        <a href="#about">About Us</a>
+        <a class="nav-cta" href="#donate">Make a Difference ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="eyebrow">Kindness starts with you</span>
+          <h1>One Click Can <span>Change a Life.</span></h1>
+          <p>
+            A little help can make a big difference.
+            Connect with people who need support and turn your kindness into action.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#help" class="btn btn-primary">Explore Ways to Help →</a>
+            <a href="#about" class="btn btn-outline">Discover Our Mission</a>
+          </div>
+
+          <div class="hero-note">
+            <span class="heart">♥</span>
+            Every act of kindness matters.
+          </div>
+        </div>
+
+        <div class="hero-image-wrap">
+          <img
+            class="hero-image"
+            src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=1100&q=85"
+            alt="Volunteers joining hands to help their community">
+
+          <div class="image-label">
+            <span class="label-icon">♥</span>
+            <div>
+              <strong>Kindness in Action</strong>
+              <small>Together, we can do more.</small>
+            </div>
+          </div>
+
+          <div class="floating-note">
+            <span>✦</span> Small help. Big hope.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTRO STRIP -->
+    <section class="intro-strip">
+      <div class="container intro-inner">
+        <p>There is always a way to help. <strong>Find yours with Neki.com</strong></p>
+        <a href="#help">Find your cause →</a>
+      </div>
+    </section>
+
+    <!-- HELP CATEGORIES -->
+    <section class="section" id="help">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">Choose your cause</span>
+            <h2>Where help meets <span>hope.</span></h2>
+          </div>
+          <p>Every person deserves care, dignity, and a chance to build a better future.</p>
+        </div>
+
+        <div class="search-bar">
+          <span>⌕</span>
+          <input type="search" id="causeSearch"
+            placeholder="Search causes, e.g. education..."
+            aria-label="Search causes">
+        </div>
+
+        <div class="cause-grid" id="causeGrid">
+          <article class="cause-card">
+            <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=800&q=80"
+              alt="Children learning together" loading="lazy">
+            <div class="cause-body">
+              <span class="tag">Education</span>
+              <h3>Education for Every Child</h3>
+              <p>Help children access learning materials, books, and educational opportunities.</p>
+              <a href="#donate" class="text-link">Support education →</a>
+            </div>
+          </article>
+
+          <article class="cause-card">
+            <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=800&q=80"
+              alt="Volunteers preparing food donations" loading="lazy">
+            <div class="cause-body">
+              <span class="tag">Food Support</span>
+              <h3>A Meal Full of Hope</h3>
+              <p>Support food drives and help families access essential meals.</p>
+              <a href="#donate" class="text-link">Share a meal →</a>
+            </div>
+          </article>
+
+          <article class="cause-card">
+            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80"
+              alt="Healthcare professional caring for a patient" loading="lazy">
+            <div class="cause-body">
+              <span class="tag">Healthcare</span>
+              <h3>Care When It Matters</h3>
+              <p>Help people find healthcare support and essential medical resources.</p>
+              <a href="#donate" class="text-link">Support care →</a>
+            </div>
+          </article>
+
+          <article class="cause-card">
+            <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=800&q=80"
+              alt="Community volunteers working together" loading="lazy">
+            <div class="cause-body">
+              <span class="tag">Volunteering</span>
+              <h3>Give Your Time</h3>
+              <p>Use your skills and time to support a local community project.</p>
+              <a href="#donate" class="text-link">Become a volunteer →</a>
+            </div>
+          </article>
+
+          <article class="cause-card">
+            <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=800&q=80"
+              alt="Young people receiving community support" loading="lazy">
+            <div class="cause-body">
+              <span class="tag">Community</span>
+              <h3>Stronger Together</h3>
+              <p>Connect with people and initiatives making a positive local impact.</p>
+              <a href="#donate" class="text-link">Join the community →</a>
+            </div>
+          </article>
+
+          <article class="cause-card">
+            <img src="https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?auto=format&fit=crop&w=800&q=80"
+              alt="Volunteers working on a community project" loading="lazy">
+            <div class="cause-body">
+              <span class="tag">Donations</span>
+              <h3>Share What You Can</h3>
+              <p>Discover ways to contribute useful items and resources to people in need.</p>
+              <a href="#donate" class="text-link">Explore donations →</a>
+            </div>
+          </article>
+        </div>
+
+        <p id="noResults" class="no-results" hidden>
+          No causes found. Try another search.
+        </p>
+      </div>
+    </section>
+
+    <!-- MISSION BANNER -->
+    <section class="mission-section" id="about">
+      <div class="container mission-grid">
+        <div class="mission-image">
+          <img src="https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?auto=format&fit=crop&w=1000&q=85"
+            alt="People working together to support their community" loading="lazy">
+          <div class="mission-sticker">Kindness<br>connects us.</div>
+        </div>
+
+        <div class="mission-content">
+          <span class="eyebrow">Why Neki exists</span>
+          <h2>Making kindness <span>easier to share.</span></h2>
+          <p>
+            Neki.com is a community-focused website concept designed to bring people
+            who want to help closer to people who need support.
+          </p>
+          <p>
+            Our vision is simple: make it easier to discover causes, learn about
+            volunteering, and take meaningful steps toward helping others.
+          </p>
+
+          <div class="mission-points">
+            <div><span>✓</span> Discover causes that matter</div>
+            <div><span>✓</span> Find simple ways to contribute</div>
+            <div><span>✓</span> Inspire a culture of kindness</div>
+          </div>
+
+          <a href="#stories" class="btn btn-primary">Explore Our Stories →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- STORIES -->
+    <section class="section stories-section" id="stories">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">Inspiration corner</span>
+            <h2>Kindness starts <span>small.</span></h2>
+          </div>
+          <p>Simple actions can inspire meaningful change in the lives around us.</p>
+        </div>
+
+        <div class="stories-grid">
+          <article class="story-card">
+            <img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=900&q=80"
+              alt="Children learning in a classroom" loading="lazy">
+            <div class="story-content">
+              <span class="story-category">Education</span>
+              <h3>A book can open a new world</h3>
+              <p>Sharing books and learning supplies can encourage children to keep discovering.</p>
+            </div>
+          </article>
+
+          <article class="story-card">
+            <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=900&q=80"
+              alt="Community food donation activity" loading="lazy">
+            <div class="story-content">
+              <span class="story-category">Community Care</span>
+              <h3>Sharing food, sharing hope</h3>
+              <p>A thoughtful community food drive can help families through a difficult day.</p>
+            </div>
+          </article>
+
+          <article class="story-card">
+            <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&w=900&q=80"
+              alt="Volunteers taking part in community work" loading="lazy">
+            <div class="story-content">
+              <span class="story-category">Volunteering</span>
+              <h3>One hour can make a difference</h3>
+              <p>Your time, knowledge, and care can become a valuable gift to someone else.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+<!-- REQUEST HELP FORM -->
+<section class="request-help-section" id="request-help">
+  <div class="container request-help-grid">
+
+    <div class="request-help-info">
+      <span class="eyebrow">We are here to listen</span>
+      <h2>Do you need <span>a helping hand?</span></h2>
+      <p>
+        Everyone deserves support. Tell us what kind of help
+        you need so that your request can be understood.
+      </p>
+
+      <div class="request-promise">
+        <span>♥</span>
+        Asking for help is a brave first step.
+      </div>
+    </div>
+
+    <form class="request-help-form" id="requestHelpForm">
+      <h3>Request Help</h3>
+      <p class="form-intro">Fill in the details below.</p>
+
+      <label for="requestName">Full Name</label>
+      <input type="text" id="requestName"
+        placeholder="Enter your full name" required>
+
+      <label for="requestPhone">Phone Number</label>
+      <input type="tel" id="requestPhone"
+        placeholder="Enter your phone number" required>
+
+      <label for="requestType">What help do you need?</label>
+      <select id="requestType" required>
+        <option value="">Select a category</option>
+        <option value="Food Support">Food Support</option>
+        <option value="Education">Education</option>
+        <option value="Medical Support">Medical Support</option>
+        <option value="Clothing">Clothing</option>
+        <option value="Other">Other Support</option>
+      </select>
+
+      <label for="requestDetails">Tell us about your needs</label>
+      <textarea id="requestDetails" rows="4"
+        placeholder="Explain what support you need..."
+        required></textarea>
+
+      <button type="submit" class="btn btn-primary form-submit">
+        Submit Help Request →
+      </button>
+
+      <p class="form-note">
+        Demo form only. Your information will not be sent to an organization.
+      </p>
+
+      <p id="requestHelpMessage"
+        class="form-message" role="status" aria-live="polite"></p>
+    </form>
+
+  </div>
+</section>
+
+    <!-- DONATION / CONTACT FORM -->
+    <section class="donate-section" id="donate">
+      <div class="container donate-grid">
+        <div class="donate-copy">
+          <span class="eyebrow">Your kindness counts</span>
+          <h2>Be the reason someone <span>smiles today.</span></h2>
+          <p>
+            Want to help? Share your details and the kind of support you are
+            interested in. This demo form shows how a website can collect an inquiry.
+          </p>
+          <div class="donate-reminder">♥ Every good deed begins with a willing heart.</div>
+        </div>
+
+        <form class="donate-form" id="donateForm">
+          <h3>Let's make a difference</h3>
+          <p class="form-intro">Tell us how you would like to help.</p>
+
+          <label for="fullName">Your name</label>
+          <input type="text" id="fullName" name="fullName"
+            placeholder="Enter your name" required>
+
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email"
+            placeholder="you@example.com" required>
+
+          <label for="helpType">I want to</label>
+          <select id="helpType" name="helpType" required>
+            <option value="">Choose an option</option>
+            <option value="Volunteer">Volunteer my time</option>
+            <option value="Donate items">Donate useful items</option>
+            <option value="Support education">Support education</option>
+            <option value="Food support">Support food initiatives</option>
+            <option value="Other">Explore other ways to help</option>
+          </select>
+
+          <label for="message">Message (optional)</label>
+          <textarea id="message" name="message" rows="3"
+            placeholder="Tell us a little more..."></textarea>
+
+          <button type="submit" class="btn btn-primary form-submit">
+            Send My Interest →
+          </button>
+          <p class="form-note">Student project demo — details are not sent to a server.</p>
+          <p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-main">
+      <div class="footer-brand">
+        <a class="logo" href="#home">Neki.com</a>
+        <p>One click can change a life. Let kindness lead the way.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Explore</h4>
+        <a href="#home">Home</a>
+        <a href="#help">Find Help</a>
+        <a href="#stories">Our Stories</a>
+      </div>
+
+      <div class="footer-links">
+        <h4>Get Involved</h4>
+        <a href="#donate">Donate</a>
+        <a href="#donate">Volunteer</a>
+        <a href="#about">Our Mission</a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 Neki.com Created with kindness.</p>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+</body>
+</html>
